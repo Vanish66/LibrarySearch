@@ -1,0 +1,40 @@
+<div class="row header">
+  <div class="col-md-2 col-md-offset-5">
+    <h2 class="library-title">Library Search</h2>
+  </div>
+</div>
+
+<div class="col-md-8 col-md-offset-2">
+
+  <div class="col-md-offset-1 filter-search">
+    <div class="filter-box-area">
+      <input  class="form-control filter-box" type="text" [(ngModel)]="filter"/>
+      <button class="btn btn-primary search-button" [disabled]="!filter || !filter.trim()" (click)="search()">Search</button>
+    </div>
+  </div>
+
+  <ng-container *ngIf="!!books && books.length > 0">
+  <div class="col-md-offset-1">
+    <select class="form-control sort-selector" [(ngModel)]="sortOption" placeholder="Select sort option" (change)="sort()">
+      <option [ngValue]= "0" >Most relevant</option>
+      <option [ngValue]= "1" >Most points</option>
+    </select>
+  </div>
+    <div class="col-md-offset-1">
+      <div class="search-result">
+        <label>Result: {{books.length}}</label>
+        <table class="table table-bordered table-hover table-condensed">
+          <tbody>
+          <tr *ngFor="let book of books">
+            <td >
+              {{book.title}}
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+

@@ -1,0 +1,44 @@
+/.vs/
+/node_modules/.bin/ansi-html.cmd
+/client-side/mrv-app/node_modules
+
+#Ignore thumbnails created by Windows
+Thumbs.db
+#Ignore files built by Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+[Bb]in
+[Dd]ebug*/
+*.lib
+*.sbr
+obj/
+[Rr]elease*/
+_ReSharper*/
+[Tt]est[Rr]esult*
+.vs/
+#Nuget packages folder
+packages/
+/LibrarySearchApp/node_modules/
+#Idea files
+/LibrarySearchApp/.idea/
+/client-side/mrv-app/dist/
+/client-side/mrv-app/tests/screenshots/
+/client-side/mrv-app/.tmp
+/.idea
+/tools/
+/local.env

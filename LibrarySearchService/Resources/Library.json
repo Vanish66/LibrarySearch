@@ -1,0 +1,335 @@
+[
+  {
+    "title": "Unlocking Android",
+    "isbn": "1933988673",
+    "pageCount": 416,
+    "relevance": 3.2,
+    "points":  7, 
+    "authors": [ "W. Frank Ableson", "Charlie Collins", "Robi Sen" ]
+  },
+  {
+    "title": "Android in Action, Second Edition",
+    "isbn": "1935182722",
+    "pageCount": 592,
+    "relevance": 2,
+    "points": 8,
+    "authors": [ "W. Frank Ableson", "Robi Sen" ]
+  },
+  {
+    "title": "Specification by Example",
+    "isbn": "1617290084",
+    "pageCount": 0,
+    "relevance": 7,
+    "points": 2,
+    "authors": [ "Gojko Adzic" ]
+  },
+  {
+    "title": "Flex 3 in Action",
+    "isbn": "1933988746",
+    "pageCount": 576,
+    "relevance": 9,
+    "points": 3,
+    "authors": [ "Tariq Ahmed with Jon Hirschi", "Faisal Abid" ]
+  },
+  {
+    "title": "Flex 4 in Action",
+    "isbn": "1935182420",
+    "pageCount": 600,
+    "relevance": 7,
+    "points": 4,
+    "authors": [ "Tariq Ahmed", "Dan Orlando", "John C. Bland II", "Joel Hooks" ]
+  },
+  {
+    "title": "Collective Intelligence in Action",
+    "isbn": "1933988312",
+    "pageCount": 425,
+    "relevance": 2.5,
+    "points": 9.1,
+    "authors": [ "Satnam Alag" ]
+  },
+  {
+    "title": "Zend Framework in Action",
+    "isbn": "1933988320",
+    "pageCount": 432,
+    "relevance": 5,
+    "points": 5,
+    "authors": [ "Rob Allen", "Nick Lo", "Steven Brown" ]
+  },
+  {
+    "title": "Flex on Java",
+    "isbn": "1933988797",
+    "pageCount": 265,
+    "relevance": 5,
+    "points": 7,
+    "authors": [ "Bernerd Allmon", "Jeremy Anderson" ]
+  },
+  {
+    "title": "Griffon in Action",
+    "isbn": "1935182234",
+    "pageCount": 375,
+    "relevance": 7,
+    "points": 9,
+    "authors": [ "Andres Almiray", "Danno Ferrin", "", "James Shingler" ]
+  },
+  {
+    "title": "OSGi in Depth",
+    "isbn": "193518217X",
+    "pageCount": 325,
+    "relevance": 1,
+    "points": 4,
+    "authors": [ "Alexandre de Castro Alves" ]
+  },
+  {
+    "title": "Flexible Rails",
+    "isbn": "1933988509",
+    "pageCount": 592,
+    "relevance": 6.3,
+    "points": 7,
+    "authors": [ "Peter Armstrong" ]
+  },
+  {
+    "title": "Hello! Flex 4",
+    "isbn": "1933988762",
+    "pageCount": 258,
+    "relevance": 9,
+    "points": 7,
+    "authors": [ "Peter Armstrong" ]
+  },
+  {
+    "title": "Coffeehouse",
+    "isbn": "1884777384",
+    "pageCount": 316,
+    "relevance": 7,
+    "points": 7,
+    "authors": [ "Levi Asher", "Christian Crumlish" ]
+  },
+  {
+    "title": "Team Foundation Server 2008 in Action",
+    "isbn": "1933988592",
+    "pageCount": 344,
+    "relevance": 6,
+    "points": 2.3,
+    "authors": [ "Jamil Azher" ]
+  },
+  {
+    "title": "Brownfield Application Development in .NET",
+    "isbn": "1933988711",
+    "pageCount": 550,
+    "relevance": 4,
+    "points": 17,
+    "authors": [ "Kyle Baley", "Donald Belcham" ]
+  },
+  {
+    "title": "MongoDB in Action",
+    "isbn": "1935182870",
+    "pageCount": 0,
+    "relevance": 8,
+    "points": 3,
+    "authors": [ "Kyle Banker" ]
+  },
+  {
+    "title": "Distributed Application Development with PowerBuilder 6.0",
+    "isbn": "1884777686",
+    "pageCount": 504,
+    "relevance": 3,
+    "points": 2,
+    "authors": [ "Michael J. Barlotta" ]
+  },
+  {
+    "title": "Jaguar Development with PowerBuilder 7",
+    "isbn": "1884777864",
+    "pageCount": 550,
+    "relevance": 10,
+    "points": 7,
+    "authors": [ "Michael Barlotta" ]
+  },
+  {
+    "title": "Taming Jaguar",
+    "isbn": "1884777686",
+    "pageCount": 362,
+    "relevance": 3,
+    "points": 2,
+    "authors": [ "Michael J. Barlotta", "Jason R. Weiss" ]
+  },
+  {
+    "title": "3D User Interfaces with Java 3D",
+    "isbn": "1884777902",
+    "pageCount": 520,
+    "relevance": 4.2,
+    "points": 7.3,
+    "authors": [ "Jon Barrilleaux" ]
+  },
+  {
+    "title": "Hibernate in Action",
+    "isbn": "193239415X",
+    "pageCount": 400,
+    "relevance": 5.2,
+    "points": 7.3,
+    "authors": [ "Christian Bauer", "Gavin King" ]
+  },
+  {
+    "title": "Hibernate in Action (Chinese Edition)",
+    "isbn": "1932394875",
+    "pageCount": 400,
+    "relevance": 6.6,
+    "points": 1,
+    "authors": [ "Christian Bauer", "Gavin King" ]
+  },
+  {
+    "title": "Java Persistence with Hibernate",
+    "isbn": "1932394885",
+    "pageCount": 880,
+    "relevance": 8,
+    "points": 6.9,
+    "authors": [ "Christian Bauer", "Gavin King" ]
+  },
+  {
+    "title": "JSTL in Action",
+    "isbn": "1930110529",
+    "pageCount": 480,
+    "relevance": 5.8,
+    "points": 8.3,
+    "authors": [ "Shawn Bayern" ]
+  },
+  {
+    "title": "iBATIS in Action",
+    "isbn": "1932394826",
+    "pageCount": 384,
+    "relevance": 6.2,
+    "points": 6.7,
+    "authors": [ "Clinton Begin", "Brandon Goodin", "Larry Meadors" ]
+  },
+  {
+    "title": "Designing Hard Software",
+    "isbn": "133046192",
+    "pageCount": 350,
+    "relevance": 4,
+    "points": 3.8,
+    "authors": [ "Douglas W. Bennett" ]
+  },
+  {
+    "title": "Hibernate Search in Action",
+    "isbn": "1933988649",
+    "pageCount": 488,
+    "relevance": 7,
+    "points": 6.2,
+    "authors": [ "Emmanuel Bernard", "John Griffin" ]
+  },
+  {
+    "title": "jQuery in Action",
+    "isbn": "1933988355",
+    "pageCount": 376,
+    "relevance": 8,
+    "points": 5.2,
+    "authors": [ "Bear Bibeault", "Yehuda Katz" ]
+  },
+  {
+    "title": "jQuery in Action, Second Edition",
+    "isbn": "1935182323",
+    "pageCount": 488,
+    "relevance": 6,
+    "points": 8.2,
+    "authors": [ "Bear Bibeault", "Yehuda Katz" ]
+  },
+  {
+    "title": "Building Secure and Reliable Network Applications",
+    "isbn": "1884777295",
+    "pageCount": 591,
+    "relevance": 4,
+    "points": 3.2,
+    "authors": [ "Kenneth P. Birman" ]
+  },
+  {
+    "title": "Ruby for Rails",
+    "isbn": "1932394699",
+    "pageCount": 532,
+    "relevance": 7,
+    "points": 2.1,
+    "authors": [ "David A. Black" ]
+  },
+  {
+    "title": "The Well-Grounded Rubyist",
+    "isbn": "1933988657",
+    "pageCount": 520,
+    "relevance": 2.6,
+    "points": 3.4,
+    "authors": [ "David A. Black" ]
+  },
+  {
+    "title": "Website Owner's Manual",
+    "isbn": "1933988452",
+    "pageCount": 296,
+    "relevance": 4.1,
+    "points": 5.2,
+    "authors": [ "Paul A. Boag" ]
+  },
+  {
+    "title": "ASP.NET 4.0 in Practice",
+    "isbn": "1935182463",
+    "pageCount": 504,
+    "relevance": 8,
+    "points": 3,
+    "authors": [
+      "Daniele Bochicchio",
+      "Stefano Mostarda",
+      "",
+      "Marco De Sanctis"
+    ]
+  },
+  {
+    "title": "Hello! Python",
+    "isbn": "1935182080",
+    "pageCount": 350,
+    "relevance": 7.2,
+    "points": 8.3,
+    "authors": [ "Anthony Briggs" ]
+  },
+  {
+    "title": "PFC Programmer's Reference Manual",
+    "isbn": "1884777554",
+    "pageCount": 368,
+    "relevance": 2,
+    "points": 7.5,
+    "authors": [ "Richard Brooks" ]
+  },
+  {
+    "title": "Graphics File Formats",
+    "isbn": "133034054",
+    "pageCount": 484,
+    "relevance": 5,
+    "points": 3,
+    "authors": [ "C. Wayne Brown", "Barry J. Shepherd" ]
+  },
+  {
+    "title": "Visual Object Oriented Programming",
+    "isbn": "131723979",
+    "pageCount": 280,
+    "relevance": 9,
+    "points": 3.1,
+    "authors": [ "Margaret M. Burnett", "Adele Goldberg", "", "Ted G. Lewis" ]
+  },
+  {
+    "title": "iOS in Practice",
+    "isbn": "1617291269",
+    "pageCount": 325,
+    "relevance": 1,
+    "points": 5.7,
+    "authors": [ "Bear P. Cahill" ]
+  },
+  {
+    "title": "iPhone in Action",
+    "isbn": "193398886X",
+    "pageCount": 472,
+    "relevance": 7,
+    "points": 2,
+    "authors": [ "Christopher Allen", "Shannon Appelcline" ]
+  },
+  {
+    "title": "Silverlight 2 in Action",
+    "isbn": "1933988428",
+    "pageCount": 400,
+    "relevance": 5.2,
+    "points": 7.4,
+    "authors": [ "Chad A. Campbell", "John Stockton" ]
+  }
+]
