@@ -1,6 +1,6 @@
 /.vs/
 /node_modules/.bin/ansi-html.cmd
-/client-side/mrv-app/node_modules
+/LibrarySearchApp/node_modules
 
 #Ignore thumbnails created by Windows
 Thumbs.db
