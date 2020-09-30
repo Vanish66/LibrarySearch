@@ -9,7 +9,6 @@ using LibrarySearchService.Constants;
 using LibrarySearchService.Models;
 using LibrarySearchService.Services.Contracts;
 using LibrarySearchService.ViewModels;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
 namespace LibrarySearchService.Services
@@ -24,6 +23,7 @@ namespace LibrarySearchService.Services
             this.mapper = mapper;
             this.configuration = configuration;
         }
+
         public async Task<List<BookViewModel>> SearchBooksByTitle(string filter)
         {
             if (string.IsNullOrEmpty(filter))
@@ -31,9 +31,17 @@ namespace LibrarySearchService.Services
                 return new List<BookViewModel>();
             }
             List<BookModel> books;
-            await using (var fs = File.OpenRead(configuration[LibrarySearchConstants.LibraryFileLocation]))
-            { 
-                books = await JsonSerializer.DeserializeAsync<List<BookModel>>(fs);
+            try
+            {
+                await using (var fs = File.OpenRead(configuration[LibrarySearchConstants.LibraryFileLocation]))
+                {
+                    books = await JsonSerializer.DeserializeAsync<List<BookModel>>(fs);
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return new List<BookViewModel>();
             }
 
             return books.Where(book => book.Title.Contains(filter.Trim(), StringComparison.OrdinalIgnoreCase))

@@ -11,7 +11,7 @@ import { LibrarySearchService } from '../services/library-search.service';
 export class LibrarySearchComponent implements OnInit {
   filter = '';
   sortOption: SortOption = SortOption.Relevant;
-  books: Book[] = [];
+  books: Book[];
 
   constructor(protected librarySearchService: LibrarySearchService) { }
 
@@ -22,10 +22,10 @@ export class LibrarySearchComponent implements OnInit {
     this.librarySearchService.getBooks(this.filter).subscribe(result => {
       if (!!result && result.length > 0) {
         this.books = result;
-        this.sort();
       } else {
         this.books = [];
       }
+      this.sort();
     });
   }
 
@@ -38,6 +38,5 @@ export class LibrarySearchComponent implements OnInit {
         this.books = this.books.sort((a, b) => b.relevance - a.relevance);
         break;
     }
-
   }
 }
