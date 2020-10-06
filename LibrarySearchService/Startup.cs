@@ -28,6 +28,7 @@ namespace LibrarySearchService
             services.AddTransient<ILogService, LogService>();
             services.AddTransient<IBookService, BookService>();
             services.AddTransient<IQueryDispatcher, QueryDispatcher>();
+            services.AddTransient<ICommandDispatcher, CommandDispatcher>();
             services.AddTransient<IQueryHandler, FindBooksQueryHandler>();
             var mapperConfig = new MapperConfiguration(mc =>
             {
