@@ -4,6 +4,7 @@ using LibrarySearchService.Core.Mappings;
 using LibrarySearchService.Core.Queries;
 using LibrarySearchService.Core.Services;
 using LibrarySearchService.Core.Services.Contracts;
+using LibrarySearchService.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -49,6 +50,7 @@ namespace LibrarySearchService
             app.UseRouting();
 
             app.UseAuthorization();
+            app.UseMiddleware<ExceptionHandlerMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {

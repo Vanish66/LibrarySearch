@@ -8,6 +8,7 @@ namespace LibrarySearchService.Core.Cqs
     public class QueryDispatcher : IQueryDispatcher
     {
         protected readonly IEnumerable<IQueryHandler> queryHandlers;
+
         public QueryDispatcher(IEnumerable<IQueryHandler> queryHandlers)
         {
             this.queryHandlers = queryHandlers;
