@@ -1,0 +1,13 @@
+.filter-box {
+  width: 250px;
+}
+.search-button {
+  margin-left: 10px;
+}
+.filter-box-area {
+  display: inline-flex;
+  padding-bottom: 10px;
+}
+.sort-selector {
+  width: 200px;
+}

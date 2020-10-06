@@ -5,21 +5,7 @@
 .header {
   padding-bottom: 30px;
 }
-.filter-box {
-  width: 250px;
-}
-.search-button {
-  margin-left: 10px;
-}
-.filter-box-area {
-  display: inline-flex;
-}
 .filter-search {
   padding-bottom: 10px;
 }
-.sort-selector {
-  width: 200px;
-}
-.search-result {
-  padding-top: 30px;
-}
+

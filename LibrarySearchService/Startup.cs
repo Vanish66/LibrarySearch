@@ -1,7 +1,9 @@
 using AutoMapper;
-using LibrarySearchService.Mappings;
-using LibrarySearchService.Services;
-using LibrarySearchService.Services.Contracts;
+using LibrarySearchService.Core.Cqs;
+using LibrarySearchService.Core.Mappings;
+using LibrarySearchService.Core.Queries;
+using LibrarySearchService.Core.Services;
+using LibrarySearchService.Core.Services.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,14 +24,17 @@ namespace LibrarySearchService
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IFindBookService, FindBookService>();
+            services.AddTransient<ILogService, LogService>();
+            services.AddTransient<IBookService, BookService>();
+            services.AddTransient<IQueryDispatcher, QueryDispatcher>();
+            services.AddTransient<IQueryHandler, FindBooksQueryHandler>();
             var mapperConfig = new MapperConfiguration(mc =>
             {
                 mc.AddProfile(new BookModelProfile());
             });
-
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
+
             services.AddControllers();
         }
 

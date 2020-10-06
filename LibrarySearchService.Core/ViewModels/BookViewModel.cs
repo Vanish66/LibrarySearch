@@ -1,4 +1,4 @@
-﻿namespace LibrarySearchService.ViewModels
+﻿namespace LibrarySearchService.Core.ViewModels
 {
     public class BookViewModel
     {

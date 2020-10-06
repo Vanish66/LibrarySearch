@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using LibrarySearchService.Models;
-using LibrarySearchService.ViewModels;
+using LibrarySearchService.Core.Models;
+using LibrarySearchService.Core.ViewModels;
 
-namespace LibrarySearchService.Mappings
+namespace LibrarySearchService.Core.Mappings
 {
     public class BookModelProfile : Profile
     {

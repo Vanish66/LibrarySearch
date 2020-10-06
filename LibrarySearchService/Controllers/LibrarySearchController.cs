@@ -1,7 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using LibrarySearchService.Services.Contracts;
-using LibrarySearchService.ViewModels;
+using AutoMapper;
+using LibrarySearchService.Core.Cqs;
+using LibrarySearchService.Core.Queries;
+using LibrarySearchService.Core.Services.Contracts;
+using LibrarySearchService.Core.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibrarySearchService.Controllers
@@ -10,17 +13,19 @@ namespace LibrarySearchService.Controllers
     [ApiController]
     public class LibrarySearchController : ControllerBase
     {
-        protected readonly IFindBookService findBookService;
+        protected readonly IQueryDispatcher queryDispatcher;
 
-        public LibrarySearchController(IFindBookService findBookService)
+        public LibrarySearchController(IQueryDispatcher queryDispatcher)
         {
-            this.findBookService = findBookService;
+            this.queryDispatcher = queryDispatcher;
         }
 
         [HttpGet]
-        public async Task<IEnumerable<BookViewModel>> Get([FromQuery] string filter)
+        public async Task<IEnumerable<BookViewModel>> Get([FromQuery] SearchBookModel model)
         {
-            return await findBookService.SearchBooksByTitle(filter);
+            var result = await queryDispatcher.DispatchAsync<FindBooksQuery, FindBooksQueryResult>(new FindBooksQuery
+                {Filter = model.Filter, SortOption = model.SortOption});
+            return result.Books;
         }
     }
 }

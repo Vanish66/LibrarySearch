@@ -1,5 +1,7 @@
+using LibrarySearchService.Core.Constants;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using Serilog;
 
 namespace LibrarySearchService
 {
@@ -14,7 +16,15 @@ namespace LibrarySearchService
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>()
+                        .UseSerilog((hostingContext, loggerConfiguration) =>
+                        {
+                            loggerConfiguration
+                                .MinimumLevel.Information()
+                                .Enrich.FromLogContext()
+                                .Enrich.WithProperty(LogAttributeKeys.ApplicationInstanceName, "Library Search Service")
+                                .WriteTo.Console();
+                        });
                 });
     }
 }

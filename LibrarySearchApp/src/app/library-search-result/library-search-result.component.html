@@ -1,0 +1,16 @@
+<ng-container *ngIf="!!books">
+  <div class="col-md-offset-1">
+    <div class="search-result">
+      <label>Result: {{books.length}}</label>
+      <table class="table table-bordered table-hover table-condensed" *ngIf="books.length > 0">
+        <tbody>
+        <tr *ngFor="let book of books">
+          <td >
+            {{book.title}}
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ng-container>

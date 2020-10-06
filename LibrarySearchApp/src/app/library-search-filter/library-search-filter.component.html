@@ -1,0 +1,11 @@
+<div class="filter-box-area">
+  <input  class="form-control filter-box" type="text" [(ngModel)]="filter"/>
+  <button class="btn btn-primary search-button" [disabled]="!filter || !filter.trim()" (click)="filterApplied()">Search</button>
+</div>
+
+<ng-container *ngIf="showSorting">
+  <select class="form-control sort-selector" [(ngModel)]="sortOption" placeholder="Select sort option" (change)="filterApplied()">
+    <option [ngValue]= "0" >Most relevant</option>
+    <option [ngValue]= "1" >Most points</option>
+  </select>
+</ng-container>

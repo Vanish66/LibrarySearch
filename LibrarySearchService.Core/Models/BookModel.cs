@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace LibrarySearchService.Models
+namespace LibrarySearchService.Core.Models
 {
     public class BookModel
     {
