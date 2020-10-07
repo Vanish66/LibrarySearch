@@ -24,4 +24,8 @@ export class LibrarySearchComponent implements OnInit {
       }
     });
   }
+
+  shouldShowSorting(): boolean {
+    return !!this.books && this.books.length > 0;
+  }
 }

@@ -6,7 +6,7 @@
 
 <div class="col-md-8 col-md-offset-2">
   <div class="col-md-offset-1 filter-search">
-    <app-library-search-filter (filterChanged)="search($event)" [showSorting]="!!books && books.length > 0"></app-library-search-filter>
+    <app-library-search-filter (filterChanged)="search($event)" [showSorting]="shouldShowSorting()"></app-library-search-filter>
   </div>
 
   <app-library-search-result [books]="books"></app-library-search-result>
